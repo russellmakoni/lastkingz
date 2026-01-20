@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@keyframes blink-animation {
+0%{opacity: 1;}
+50%{opacity: 0;}
+100%{opacity: 1;}
+}
+.blink-text{
+  animation: blink-animation 1s infinite ;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+              
+                .brand-glow {
+                    /* Basic text shadow for a glow effect */
+                    text-shadow:
+                        0 0 5px #fff,    /* White glow */
+                        0 0 10px #fff,
+                        0 0 15px #fff,
+                        0 0 20px #00f,   /* Blue glow for a deeper effect */
+                        0 0 30px #00f,
+                        0 0 40px #00f;
+                    animation: glow-animation 2s infinite alternate; /* Optional: subtle animation */
+                }
+
+                @keyframes glow-animation {
+                    from {
+                        text-shadow:
+                            0 0 5px #fff,
+                            0 0 10px #fff,
+                            0 0 15px #fff,
+                            0 0 20px #00f;
+                    }
+                    to {
+                        text-shadow:
+                            0 0 10px #fff,
+                            0 0 20px #fff,
+                            0 0 30px #fff,
+                            0 0 40px #00f,
+                            0 0 50px #00f,
+                            0 0 60px #00f;
+                    }
+                }
+                
+            
