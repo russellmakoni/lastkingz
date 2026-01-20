@@ -1,0 +1,13 @@
+
+ /*<div className="flex items-center space-x-2 text-white">
+                   <NavButton currentView={view} setView={setView} targetView="inventory">Inventory</NavButton>
+                        <NavButton currentView={view} setView={setView} targetView="dashboard">Dashboard</NavButton>
+                        <NavButton currentView={view} setView={setView} targetView="inventory-log">InventoryLogScreen</NavButton>
+                        
+                    </div>
+                    const NavButton= ({ currentView, targetView, children, icon }) => (
+    <button onClick={() => setView(targetView)} 
+    className={`flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${currentView === targetView ? 'bg-indigo-600 text-white shadow-md' : 'text-white hover:bg-indigo-100 hover:text-indigo-700'}`}>
+        {icon}
+        <span>{children}</span>
+    </button>*/
